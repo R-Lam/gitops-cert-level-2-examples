@@ -23,6 +23,8 @@ spec:
   template:
     metadata:
       name: '{{path.basename}}-{{name}}'
+      labels:
+        environment: default
     spec:
       project: '{{metadata.labels.environment}}'
       source:
